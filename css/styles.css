@@ -251,7 +251,7 @@ input[type='submit'] {
   position: relative;
   padding: 30px;
   height: 100%;
-  min-height: 420px;
+  min-height: 210px;
   display: flex;
   flex-direction: column;
   border-radius: 24px;
@@ -308,8 +308,8 @@ input[type='submit'] {
   z-index: 2;
 }
 
-.col-12 .card {
-  min-height: 210px;
+.col-4 .card {
+  min-height: 420px;
 }
 
 .col-12 .card-gr-green {
@@ -350,8 +350,16 @@ input[type='submit'] {
     margin-bottom: 40px;
   }
 
+  .h2 br {
+    display: none;
+  }
+
   .h2-subtitle {
     margin-bottom: 40px;
+  }
+
+  .h2-subtitle br {
+    display: none;
   }
 
   .h2 + .h2-subtitle {
