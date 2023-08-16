@@ -49,6 +49,8 @@
 		// bottom: 5px;
 		// left: 50%;
 		// transform: translateX(-50%);
+
+		.sm(max-width, 200px);
 	}
 
 	&-img-rel {
@@ -61,6 +63,11 @@
 			// margin: -30px auto 0;
 			margin: 0 auto;
 			height: 100%;
+
+			.sm-block({
+				margin-left: 0;
+				margin-right: 0;
+			});
 		}
 	}
 
@@ -121,5 +128,6 @@
 .col-6 {
 	.card-img {
 		max-width: 300px;
+		.sm(max-width, 200px);
 	}
 }
