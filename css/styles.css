@@ -376,6 +376,15 @@ input[type='submit'] {
     margin: 0 auto 40px;
   }
 
+  .card-img {
+    max-width: 200px;
+  }
+
+  .card-img-rel .card-img {
+    margin-left: 0;
+    margin-right: 0;
+  }
+
   .col-12 .card-gr-green {
     background: linear-gradient(180deg, rgba(240, 250, 245, 0) 0%, #DCF5E8 100%);
   }
@@ -386,6 +395,10 @@ input[type='submit'] {
 
   .col-12 .card-gr-blue {
     background: linear-gradient(180deg, rgba(229, 239, 253, 0) 0%, #E5EFFD 100%);
+  }
+
+  .col-6 .card-img {
+    max-width: 200px;
   }
 }
 
