@@ -12,15 +12,93 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/styles.css?v=1">
 </head>
 <body class="home">
 
-	<!-- //= html/header.html -->
-
-	<!-- //= html/menu.html -->
+	<!-- header -->
+	<header class="header">
+	    <div class="container">
+	        <div class="header__content">
+	
+	           <a href="index.html" class="custom-logo-link">
+	            <img src="img/logo.svg" alt="" class="custom-logo">
+	           </a>
+	
+	           <nav class="navigation">
+	                <ul class="navigation__menu">
+	                    <li><a href="#">Кто мы?</a></li>
+	                    <li class="menu-item-has-children">
+	                        <a href="#">Сервисы</a>
+	                        <ul class="sub-menu">
+	                            <li><a href="services.html">ИТ-решения для бизнеса</a></li>
+	                            <li><a href="#">Проверка контрагентов</a></li>
+	                            <li><a href="#">Электронный третейский суд</a></li>
+	                            <li><a href="#">Медиация онлайн</a></li>
+	                            <li><a href="#">Консультации экспертов</a></li>
+	                            <li><a href="#">Онлайн бухгалтерия</a></li>
+	                            <li><a href="#">Интеграция с учетной системой</a></li>
+	                            <li><a href="#">Архив документов</a></li>
+	                            <li><a href="#">Документооборот</a></li>
+	                            <li><a href="#">эТТН</a></li>
+	                            <li><a href="#">Модуль «Экспресс»</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="#">Справка</a></li>
+	                    <li><a href="#">Контакты</a></li>
+	                </ul>
+	
+	                <ul class="user__menu">
+	                    <li><a class="btn" href="#">Войти</a></li>
+	                    <li><a class="btn btn-o" href="#">Регистрация</a></li>
+	                </ul>
+	            </nav>
+	
+	            <div class="header__burger"><span></span></div>
+	
+	        </div>
+	    </div>
+	</header>
+	<!-- end header -->
 
 	<main>
+
+		<section class="hero">
+			<div class="container">
+	
+					<div class="hero__content">
+							
+							<div class="row">
+									<div class="col-7">
+											<h1 class="h1">Весь офис в одной цифровой экосистеме</h1>
+											<p class="h1-subtitle">Комплексный цифровой продукт, объединяющий различные бизнес-сервисы для нового или небольшого/среднего бизнеса заменяющий функциональных специалистов и работающий по подписке</p>
+
+											<a class="btn" href="#">Подключиться</a>
+
+											<div class="app">
+												<p class="h1-subtitle">Скачивай приложение и работай с телефона!</p>
+												<div class="app-btns">
+													<a href="#" class="app-btns__gp">
+														<img src="img/android.png" alt="">
+													</a>
+													<a href="#" class="app-btns__as">
+														<img src="img/appstore.png" alt="">
+													</a>
+												</div>
+											</div>
+
+									</div>
+									<div class="col-5 d-sm-none">
+										<div class="card-img-rel">
+											<img class="hero-img" src="img/home-hero-img.svg" alt="">
+										</div>
+									</div>
+							</div>
+							
+					</div>
+	
+			</div>
+		</section>
 
 		<section>
 			<div class="container">
@@ -373,7 +451,10 @@
 
 	<!-- //= html/popup.html -->
 
-	<!-- //= html/scripts.html -->
+	<!-- scripts -->
+	<script src='js/jquery.min.js'></script>
+	<script src="js/scripts.js"></script>
+	<!-- end scripts -->
 	
 
 </body>
