@@ -1,22 +1,58 @@
 .btn {
-	border-radius: 24px;
-	padding: 28px 30px;
+	// border-radius: 24px;
+	// padding: 28px 30px;
+	padding: 10px 45px;
+	border-radius: 12px;
+
+	font-size: 15px;
+	font-weight: 500;
 
 	color: @white;
 	background-color: @btn-color;
 
+	text-decoration: none;
 	display: inline-block;
 
-	transition: background-color 0.5s ease;
+	transition: all 0.5s ease;
 
 	&:hover,
 	&:active,
 	&:focus {
+		color: @white;
 		background-color: @me-color-fiery-orange;
+		border-color: @me-color-fiery-orange;
 	}
 }
 
-.btn-small {
-	padding: 25px 30px;
+.btn-o {
+	color: @btn-color;
+	background-color: transparent;
+	border: 1px solid @btn-color;
+}
 
+.btn-small {
+	border-radius: 24px;
+	padding: 25px 30px;
+}
+
+.app-btns {
+	font-size: 0;
+
+	a img{
+		transition: transform .4s cubic-bezier(0,0,.4,1);
+		will-change: transform;
+	}
+
+	a:hover img{
+		transform: scale(1.03);
+	}
+
+	a+a {
+		margin-left: 10px;
+	}
+
+	img {
+		width: auto;
+		height: 40px;
+	}
 }

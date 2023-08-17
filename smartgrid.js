@@ -6,9 +6,9 @@ module.exports = {
 		fields: "20px" // Внимание! fields обязан быть >= offset / 2
 	},
 	breakPoints: {
-		// md: {
-		// 	width: "900px"
-		// },
+		md: {
+			width: "900px"
+		},
 		sm: {
 			width: "768px",
 			// fields: "24px"
