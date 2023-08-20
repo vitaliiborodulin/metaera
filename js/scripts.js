@@ -45,4 +45,5 @@ $(function() {
             burger.removeClass('header__burger--close');
         }
     });
+    
 });
