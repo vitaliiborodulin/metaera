@@ -12,7 +12,8 @@
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Inter:wght@500;700&display=swap" rel="stylesheet">
 
-	<link rel="stylesheet" href="css/styles.css?v=1">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.css">
+	<link rel="stylesheet" href="css/styles.css?v=2">
 </head>
 <body class="home">
 
@@ -20,7 +21,7 @@
 
 	<main>
 
-		<section class="hero">
+		<section class="hero brs-2 bg-gr-orange">
 			<div class="container">
 	
 					<div class="hero__content">
@@ -66,39 +67,59 @@
 				<div class="card-list">
 					<div class="row">
 
-						<div class="col-4">
-							<div class="card card-gr-orange">
-								<h3 class="h3">Договоры, акты, счета и многое другое</h3>
-								<p>Заключайте сделки и отправляйте любое количество документов в 1 клик</p>
-								<a href="#" class="btn btn-small">
-									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-									</svg>
-								</a>
-								<img class="card-img" src="img/el-1.svg" alt="">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-orange p-30">
+								<div class="card__inner">
+									<div class="card__text">
+										<h3 class="h3">Договоры, акты, счета и многое другое</h3>
+										<div class="card__descr">
+											<p>Заключайте сделки и отправляйте любое количество документов в 1 клик</p>
+										</div>
+									</div>
+									<div class="card__image mt-auto brs-1 bg-gr-orange">
+										<img src="img/el-1.svg" alt="">
+									</div>
+									<a href="#" class="btn card__btn btn-small">
+										<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+										</svg>
+									</a>
+								</div>
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-orange">
-								<h3 class="h3">эТТН</h3>
-								<p>Оптимизируйте процесс документооборота при доставке товаров</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-orange p-30">
+								<div class="card__text">
+									<h3 class="h3">эТТН</h3>
+									<div class="card__descr">
+										<p>Оптимизируйте процесс документооборота при доставке товаров</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1 bg-gr-orange">
+									<img src="img/el-2.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/el-2.svg" alt="">
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-orange">
-								<h3 class="h3">Архив</h3>
-								<p>Избавьтесь от бумажного архива и пыли! Ведите цифровой архив с удобным поиском и доступом к документам 24/7</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-orange p-30">
+								<div class="card__text">
+									<h3 class="h3">Архив</h3>
+									<div class="card__descr">
+										<p>Избавьтесь от бумажного архива и пыли! Ведите цифровой архив с удобным поиском и доступом к документам 24/7</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1 bg-gr-orange">
+									<img src="img/el-3.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/el-3.svg" alt="">
 							</div>
 						</div>
 
@@ -112,72 +133,22 @@
 			<div class="container">
 				<h2 class="h2">Интеграция 1С и ЭДО</h2>
 
-				<div class="card card-gr-orange">
-					<div class="row">
-						<div class="col-6">
-							<h3 class="h3">1C + ЭДО</h3>
-							<p>Упростите процесс работы с документами, формируйте, подписывайте и отправляйте их контрагентам прямо из системы 1С. Наш интеграционный модуль предоставляется бесплатно</p>
-							<a href="#" class="btn btn-small">
-								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-								</svg>
-							</a>
-						</div>
-						<div class="col-6">
-								<div class="card-img-rel">
-									<img class="card-img" src="img/1c.svg" alt="">
+				<div class="card bg-hgr-orange">
+					<div class="card__inner p-sm-100" style="background-image: url(img/1c.svg)">
+						<div class="row">
+							<div class="col-6">
+								<div class="card__text p-30">
+									<h3 class="h3">1C + ЭДО</h3>
+									<div class="card__descr">
+										<p>Упростите процесс работы с документами, формируйте, подписывайте и отправляйте их контрагентам прямо из системы 1С. Наш интеграционный модуль предоставляется бесплатно</p>
+									</div>
 								</div>
-						</div>
-					</div>
-				</div>
-
-			</div>
-		</section>
-
-		<section>
-			<div class="container">
-				<h2 class="h2">Сервисы для бухгалтерского учета</h2>
-
-				<p class="h2-subtitle">Упростите свой бухгалтерский учет с мощными инструментами и <br> автоматизацией процессов</p>
-
-				<div class="card-list">
-					<div class="row">
-
-						<div class="col-4">
-							<div class="card card-gr-green">
-								<h3 class="h3">эТТН</h3>
-								<p>Оптимизируйте процесс документооборота при доставке товаров</p>
-								<a href="#" class="btn btn-small">
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/el-2.svg" alt="">
 							</div>
 						</div>
-
-						<div class="col-4">
-							<div class="card card-gr-green">
-								<h3 class="h3">Онлайн бухгалтерия для малого бизнеса или ИП</h3>
-								<p>Понятный и простой учет для вашего бизнеса</p>
-								<a href="#" class="btn btn-small">
-									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-									</svg>
-								</a>
-								<img class="card-img" src="img/serv-2.svg" alt="">
-							</div>
-						</div>
-
-						<div class="col-4">
-							<div class="card card-gr-green">
-								<h3 class="h3">Архив бухгалтерских документов</h3>
-								<p>Формируйте, подписывайте и отправляйте документы контрагентам прямо из 1С. Интеграционный модуль бесплатно</p>
-								<a href="#" class="btn btn-small">
-									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-									</svg>
-								</a>
-								<img class="card-img" src="img/el-3.svg" alt="">
-							</div>
-						</div>
-
 					</div>
 				</div>
 
@@ -188,24 +159,24 @@
 			<div class="container">
 				<h2 class="h2">Или передавайте все вопросы <br> бухгалтерского учета на аутсорсионг</h2>
 
-				<div class="card card-gr-blue">
-					<div class="row">
+				<div class="card bg-hgr-blue">
+					<div class="card__inner p-sm-100" style="background-image: url(img/bus.svg)">
+						<div class="row">
 
-						<div class="col-6">
-							<h3 class="h3">Бухгалтерские услуги</h3>
-							<p>Освободите себя от сложностей бухгалтерии и налогообложения с помощью эффективного и надежного аутсорсинга. Наша команда опытных специалистов возьмет на себя все вопросы и обеспечит соблюдение налоговых требований</p>
-							<a href="#" class="btn btn-small">
-								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-								</svg>
-							</a>
-						</div>
-
-						<div class="col-6">
-							<div class="card-img-rel">
-								<img class="card-img" src="img/bus.svg" alt="">
+							<div class="col-6">
+								<div class="card__text p-30">
+									<h3 class="h3">Бухгалтерские услуги</h3>
+									<div class="card__descr">
+										<p>Освободите себя от сложностей бухгалтерии и налогообложения с помощью эффективного и надежного аутсорсинга. Наша команда опытных специалистов возьмет на себя все вопросы и обеспечит соблюдение налоговых требований</p>
+									</div>
+								</div>
+								<a href="#" class="btn card__btn btn-small">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+									</svg>
+								</a>
 							</div>
+	
 						</div>
-
 					</div>
 				</div>
 
@@ -216,21 +187,22 @@
 			<div class="container">
 				<h2 class="h2">Если вы бухгалтерская <br> компания</h2>
 
-				<div class="card card-gr-green">
-					<div class="row">
-						<div class="col-6">
-							<h3 class="h3">Модуль «Экспресс»</h3>
-							<p>Сервис для доставки первичных документов и быстрого взаимодействия специалиста на аутсорсинге и клиента, а также создания и ведения цифрового архива документов</p>
-							<a href="#" class="btn btn-small">
-								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-								</svg>
-							</a>
-						</div>
-						<div class="col-6">
-							<div class="card-img-rel">
-								<img class="card-img" src="img/exp.svg" alt="">
+				<div class="card bg-hgr-green">
+					<div class="card__inner p-sm-100" style="background-image: url(img/exp.svg)">
+						<div class="row">
+							<div class="col-6">
+								<div class="card__text p-30">
+									<h3 class="h3">Модуль «Экспресс»</h3>
+									<div class="card__descr">
+										<p>Сервис для доставки первичных документов и быстрого взаимодействия специалиста на аутсорсинге и клиента, а также создания и ведения цифрового архива документов</p>
+									</div>
+								</div>
+								<a href="#" class="btn card__btn btn-small">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+									</svg>
+								</a>
 							</div>
-					</div>
+						</div>
 					</div>
 				</div>
 
@@ -246,39 +218,57 @@
 				<div class="card-list">
 					<div class="row">
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Юрист</h3>
-								<p>Онлайн-сервис юридических консультаций предоставит вам качественное руководство и решения для любого правового случая</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Юрист</h3>
+									<div class="card__descr">
+										<p>Онлайн-сервис юридических консультаций предоставит вам качественное руководство и решения для любого правового случая</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/con-1.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/con-1.svg" alt="">
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Кадровик</h3>
-								<p>Универсальный помощник по любым кадровым вопросам и кадрового делопроизводства</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Кадровик</h3>
+									<div class="card__descr">
+										<p>Универсальный помощник по любым кадровым вопросам и кадрового делопроизводства</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/con-2.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/con-2.svg" alt="">
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Финансист</h3>
-								<p>Сервис финансовых консультаций от опытных специалистов</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Финансист</h3>
+									<div class="card__descr">
+										<p>Сервис финансовых консультаций от опытных специалистов</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/con-3.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/con-3.svg" alt="">
 							</div>
 						</div>
 
@@ -296,27 +286,39 @@
 				<div class="card-list">
 					<div class="row">
 
-						<div class="col-6">
-							<div class="card card-gr-orange">
-										<h3 class="h3">Сервис досудебного урегулирования споров</h3>
+						<div class="col-6 mb-sm-40">
+							<div class="card bg-gr-orange p-30">
+								<div class="card__text">
+									<h3 class="h3">Сервис досудебного урегулирования споров</h3>
+									<div class="card__descr">
 										<p>Онлайн сервис медиации позволяет урегулировать вопросы связанные с исполнением договора не обращаясь в суди и сохранив партнерские отношения</p>
-										<a href="#" class="btn btn-small">
-											<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-											</svg>
-										</a>
-										<img class="card-img" src="img/on-1.svg" alt="">
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/on-1.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+									</svg>
+								</a>
 							</div>
 						</div>
 	
-						<div class="col-6">
-							<div class="card card-gr-orange">
-										<h3 class="h3">Электронный третейский суд</h3>
+						<div class="col-6 mb-sm-40">
+							<div class="card bg-gr-orange p-30">
+								<div class="card__text">
+									<h3 class="h3">Электронный третейский суд</h3>
+									<div class="card__descr">
 										<p>Онлайн сервис электронного третейского судопроизводства, который позволит автоматизировать и упростить весь процесс взыскания долгов и разрешения иных судебных споров</p>
-										<a href="#" class="btn btn-small">
-											<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-											</svg>
-										</a>
-										<img class="card-img" src="img/on-2.svg" alt="">
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/on-2.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+									</svg>
+								</a>
 							</div>
 						</div>
 	
@@ -330,19 +332,20 @@
 			<div class="container">
 				<h2 class="h2">Проверка контрагентов</h2>
 
-				<div class="card card-gr-orange">
-					<div class="row">
-						<div class="col-6">
-							<h3 class="h3">Безопасность сделок</h3>
-							<p>Проверка контрагентов обезопасит вас при принятии стратегических решений Снижайте риски работы, используя сервис проверки контрагентов. Получайте подробные сведения о ваших существующих или потенциальных партнерах и оценивайте перспективы работы с ними.</p>
-							<a href="#" class="btn btn-small">
-								<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
-								</svg>
-							</a>
-						</div>
-						<div class="col-6">
-							<div class="card-img-rel">
-								<img class="card-img" src="img/bez.svg" alt="">
+				<div class="card bg-hgr-orange">
+					<div class="card__inner p-sm-100" style="background-image: url(img/bez.svg)">
+						<div class="row">
+							<div class="col-6">
+								<div class="card__text p-30">
+									<h3 class="h3">Безопасность сделок</h3>
+									<div class="card__descr">
+										<p>Проверка контрагентов обезопасит вас при принятии стратегических решений Снижайте риски работы, используя сервис проверки контрагентов. Получайте подробные сведения о ваших существующих или потенциальных партнерах и оценивайте перспективы работы с ними.</p>
+									</div>
+								</div>
+								<a href="#" class="btn card__btn btn-small">
+									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
+									</svg>
+								</a>
 							</div>
 						</div>
 					</div>
@@ -360,39 +363,57 @@
 				<div class="card-list">
 					<div class="row">
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Облачный сервер</h3>
-								<p>Максимизируйте возможности своего бизнеса с гибким и надежным облачным сервером</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Облачный сервер</h3>
+									<div class="card__descr">
+										<p>Максимизируйте возможности своего бизнеса с гибким и надежным облачным сервером</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/it-1.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/it-1.svg" alt="">
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Облачные рабочие места</h3>
-								<p>Освободите себя от ограничений офиса и работайте эффективно, где бы вы ни находились</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Облачные рабочие места</h3>
+									<div class="card__descr">
+										<p>Освободите себя от ограничений офиса и работайте эффективно, где бы вы ни находились</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/it-2.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/it-2.svg" alt="">
 							</div>
 						</div>
 
-						<div class="col-4">
-							<div class="card card-gr-blue">
-								<h3 class="h3">Оценка защищенности ИТ-инфраструктуры</h3>
-								<p>Наши эксперты проведут всесторонний анализ безопасности и предоставят вам стратегию улучшения защиты</p>
-								<a href="#" class="btn btn-small">
+						<div class="col-4 mb-sm-40">
+							<div class="card bg-gr-blue p-30">
+								<div class="card__text">
+									<h3 class="h3">Оценка защищенности ИТ-инфраструктуры</h3>
+									<div class="card__descr">
+										<p>Наши эксперты проведут всесторонний анализ безопасности и предоставят вам стратегию улучшения защиты</p>
+									</div>
+								</div>
+								<div class="card__image mt-auto brs-1">
+									<img src="img/it-3.svg" alt="">
+								</div>
+								<a href="#" class="btn card__btn btn-small">
 									<svg xmlns="http://www.w3.org/2000/svg" width="17" height="16" fill="none"><path fill="#fff" d="m9.04 15.29-1.407-1.392 4.883-4.882H.25V6.984h12.266L7.633 2.11 9.039.711 16.33 8l-7.29 7.29Z"/>
 									</svg>
 								</a>
-								<img class="card-img" src="img/it-3.svg" alt="">
 							</div>
 						</div>
 

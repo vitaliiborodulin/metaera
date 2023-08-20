@@ -1,6 +1,6 @@
 .hero {
-	background: radial-gradient(100% 100% at 50% 100%, #FDEEE3 29.83%, rgba(253, 238, 227, 0) 100%);
-	border-radius: 48px;
+	// background: radial-gradient(100% 100% at 50% 100%, #FDEEE3 29.83%, rgba(253, 238, 227, 0) 100%);
+	// border-radius: 48px;
 
 	.sm-block({
 		border-radius: 0;
@@ -13,10 +13,10 @@
 
 	.btn {
 		margin-top: 52px;
-		margin-bottom: 61px;
 
 		.sm-block({
-			margin: 40px 0;
+			margin-top: 40px;
+			width: 100%;
 		});
 	}
 
@@ -42,6 +42,14 @@
 	}
 }
 
-.hero-bg-rev {
-	background: linear-gradient(180deg, #FDEEE3 0%, rgba(253, 238, 227, 0) 100%);
+// .hero + section {
+// 	padding-top: 0;
+// }
+
+.home .hero {
+	.btn {
+		margin-bottom: 61px;
+
+		.sm(margin-bottom, 40px);
+	}
 }
