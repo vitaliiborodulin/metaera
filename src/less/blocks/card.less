@@ -115,3 +115,28 @@
 // 		.sm(max-width, 200px);
 // 	}
 // }
+
+
+.container-fluid {
+	.card-list {
+		padding-bottom: 50px;
+		overflow-x: auto;
+		.sm-block({
+			padding-bottom: 0;
+			overflow-x: unset
+		});
+	}
+	.row {
+		flex-wrap: nowrap;
+		// justify-content: center;
+		.sm-block({
+			flex-wrap: wrap;
+			justify-content: center;
+		});
+	}
+	.col-4 {
+		// max-width: 360px;
+		flex-basis: 360px;
+		flex-shrink: 0;
+	}
+}

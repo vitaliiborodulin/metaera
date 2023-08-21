@@ -27,18 +27,18 @@
 		});
 	}
 
-	&-img {
-		transform: scale(1.3);
-	}
-
-	.card-img-rel {
+	&-img-wrap {
+		width: 100%;
+		height: 100%;
 		display: flex;
 		flex-direction: column;
-
-		img {
-			margin-top: auto;
-			margin-bottom: auto;
-		}
+	}
+	
+	&-img {
+		display: block;
+		margin-bottom: auto;
+		margin-top: auto;
+		transform: scale(1.3);
 	}
 }
 
