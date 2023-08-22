@@ -464,6 +464,43 @@ input[type='submit'] {
   background: url(../img/mail.svg) no-repeat;
 }
 
+.nav-box {
+  background-color: #fff;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  padding-top: 20px;
+  text-align: center;
+  border-radius: 24px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.nav-box li {
+  flex-basis: 100px;
+  margin-bottom: 20px;
+}
+
+.nav-box a {
+  text-decoration: none;
+  color: #4E473F;
+  transition: color 0.5s ease;
+}
+
+.nav-box a:hover {
+  color: #F07D29;
+}
+
+.nav-box a span {
+  display: block;
+}
+
+.nav-box a img {
+  display: inline-block;
+  margin-bottom: 4px;
+}
+
 .card {
   position: relative;
   overflow: hidden;
@@ -797,40 +834,6 @@ input[type='submit'] {
   z-index: 2;
   width: 100%;
   top: 112%;
-  background-color: #fff;
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
-  padding-top: 20px;
-  text-align: center;
-  border-radius: 24px;
-  max-height: 180px;
-  overflow-y: scroll;
-}
-
-.hero__nav li {
-  flex-basis: 100px;
-  margin-bottom: 20px;
-}
-
-.hero__nav a {
-  text-decoration: none;
-  color: #4E473F;
-  transition: color 0.5s ease;
-}
-
-.hero__nav a:hover {
-  color: #F07D29;
-}
-
-.hero__nav a span {
-  display: block;
-}
-
-.hero__nav a img {
-  display: inline-block;
-  margin-bottom: 4px;
 }
 
 .home .hero {
@@ -1017,6 +1020,11 @@ input[type='submit'] {
     font-size: 20px;
   }
 
+  .nav-box {
+    top: 100%;
+    border: 1px solid #180B020A;
+  }
+
   .card {
     max-width: 335px;
     margin: 0 auto;
@@ -1068,11 +1076,6 @@ input[type='submit'] {
   .hero .app .h1-subtitle {
     font-size: 20px;
     font-weight: 700;
-  }
-
-  .hero__nav {
-    top: 100%;
-    border: 1px solid #180B020A;
   }
 
   .home .hero {
