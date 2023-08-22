@@ -805,6 +805,8 @@ input[type='submit'] {
   padding-top: 20px;
   text-align: center;
   border-radius: 24px;
+  max-height: 180px;
+  overflow-y: scroll;
 }
 
 .hero__nav li {
@@ -1069,7 +1071,7 @@ input[type='submit'] {
   }
 
   .hero__nav {
-    top: 94%;
+    top: 100%;
     border: 1px solid #180B020A;
   }
 
