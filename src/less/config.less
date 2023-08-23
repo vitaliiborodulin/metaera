@@ -147,9 +147,27 @@
     linear-gradient(96.99deg, #FDEEE3 1.57%, #F4F6FE 98.94%);
 }
 
+.bg-hgr-o2b-rev {
+    background: linear-gradient(96.99deg, #F4F6FE 1.57%, #FDEEE3 98.94%);
+}
+
 .bg-hgr-o2g {
     background: linear-gradient(92.37deg, #FDEEE3 1.88%, rgba(248, 247, 246, 0.5) 99.16%);
 }
+
+.bg-fog-bottom {
+    &::after {
+        background: linear-gradient(0deg,#fff,hsla(0,0%,100%,0));
+        left: 0;
+        bottom: 0;
+        content: "";
+        height: 100px;
+        pointer-events: none;
+        position: absolute;
+        width: 100%;
+    }
+}
+
 
 .brs-1 {
     border-radius: 24px;
@@ -169,6 +187,10 @@
 
 .m-auto {
     margin: 0 auto;
+}
+
+.align-center {
+    align-items: center;
 }
 
 .d-none {
@@ -214,8 +236,12 @@
         width: 100%;
     }
 
+    .mb-sm-20 {
+        margin-bottom: 20px!important;
+    }
+
     .mb-sm-40 {
-        margin-bottom: 40px;
+        margin-bottom: 40px!important;
     }
 
     .col-6:last-child {
