@@ -8,7 +8,7 @@ $(function() {
     			win_height = $(window).height(),
     			main_nav = $('.header'),
     			main_nav_offset = '',
-    			scroll_by = 120;
+    			scroll_by = 100;
     
     	main_nav_offset = $(main_nav).outerHeight();
     
