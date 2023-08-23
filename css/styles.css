@@ -575,6 +575,20 @@ input[type='submit'] {
   flex-shrink: 0;
 }
 
+.carousel__serv {
+  --f-carousel-spacing: 40px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.49%, #FFFFFF 15.99%, #FFFFFF 100%);
+}
+
+.serv__slide {
+  max-width: 360px;
+}
+
+.serv__slide .card:hover {
+  -webkit-transform: none;
+          transform: none;
+}
+
 .popup-pic-wrapper {
   position: relative;
   width: 100%;
@@ -1057,6 +1071,11 @@ input[type='submit'] {
   .container-fluid .row {
     flex-wrap: wrap;
     justify-content: center;
+  }
+
+  .serv__slide {
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .popup-pic-wrapper::before {
