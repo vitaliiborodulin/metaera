@@ -271,6 +271,10 @@ img {
   height: 100%!important;
 }
 
+.h-100vh {
+  height: 100vh;
+}
+
 .m-auto {
   margin: 0 auto;
 }
@@ -866,6 +870,12 @@ input[type='submit'] {
   top: 112%;
 }
 
+.hero a.h1-subtitle {
+  margin-bottom: 16px;
+  display: block;
+  text-decoration: none;
+}
+
 .home .hero {
   padding-bottom: 150px;
   margin-bottom: 50px;
@@ -878,6 +888,10 @@ input[type='submit'] {
 .home .hero .hero-img {
   -webkit-transform: scale(1.3);
           transform: scale(1.3);
+}
+
+.contacts__block {
+  margin-bottom: 70px;
 }
 
 .footer {
@@ -1133,6 +1147,10 @@ input[type='submit'] {
   }
 
   .home .hero .btn {
+    margin-bottom: 40px;
+  }
+
+  .contacts__block {
     margin-bottom: 40px;
   }
 }
