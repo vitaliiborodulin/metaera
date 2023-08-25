@@ -61,8 +61,8 @@ $(function() {
     Fancybox.bind("[data-fancybox]", {
       // Your custom options
     });
-    const container = document.querySelector(".carousel__serv");
-    const options = { 
+    const servContainer = document.querySelector(".carousel__serv");
+    const servOptions = { 
     	enabled: true,
       breakpoints: {
         "(max-width: 768px)": {
@@ -77,5 +77,45 @@ $(function() {
     	// 'slidesPerPage': 3,
     };
     
-    new Carousel(container, options);
+    if(servContainer) new Carousel(servContainer, servOptions);
+    
+    // service page
+    
+    const tabsSliderContainer = document.querySelector(".tabs__right-slider");
+    const tabsSliderOptions = { 
+    	enabled: false,
+      breakpoints: {
+        "(max-width: 768px)": {
+          enabled: true,
+        },
+      },
+      // Dots: false,
+    	Navigation: false,
+    	// 'dragFree': true,
+    	'slidesPerPage': 1,
+      infinite: false,
+    };
+    
+    if(tabsSliderContainer) {
+      var tabsSliderCarousel = new Carousel(tabsSliderContainer, tabsSliderOptions);
+    }
+    
+    $(window).resize(function(){
+      tabsSliderCarousel.reInit();
+    })
+    const tabCards = $('.tab__cards .tab__card');
+    
+    tabCards.on('click', function(){
+    
+    	tabCards.removeClass('active');
+    	$(this).addClass('active');
+    
+    	var id = $(this).data('open');
+    
+    	var imageTabs = $('.tabs__right-slider .f-carousel__slide')
+    
+    	imageTabs.slideUp(200);
+    	$('.tabs__right-slider .f-carousel__slide[data-id='+id+']').slideDown(200);
+    
+    });
 });

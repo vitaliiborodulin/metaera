@@ -717,6 +717,54 @@ input[type='submit'] {
           transform: none;
 }
 
+.f-carousel__dot {
+  background: #F07D29;
+}
+
+.tab__cards {
+  max-height: 521px;
+  overflow-y: auto;
+}
+
+.tab__card {
+  padding: 20px;
+  border-radius: 14px;
+}
+
+.tab__card.active {
+  background-color: #FDEEE3;
+}
+
+.tab__image {
+  margin-bottom: 22px;
+  width: 100%;
+}
+
+.tab__header {
+  margin-bottom: 10px;
+  font-size: 17px;
+  font-weight: 700;
+  color: #180B02;
+}
+
+.tab__descr {
+  font-size: 14px;
+  font-weight: 500;
+  color: #807974;
+}
+
+.tab__descr p + p {
+  margin-top: 10px;
+}
+
+.f-carousel__slide {
+  display: none;
+}
+
+.f-carousel__slide.active {
+  display: block;
+}
+
 .popup-pic-wrapper {
   position: relative;
   width: 100%;
@@ -1171,6 +1219,14 @@ input[type='submit'] {
   .serv__slide {
     margin-left: auto;
     margin-right: auto;
+  }
+
+  .tab__card {
+    background-color: #FDEEE3;
+  }
+
+  .f-carousel__slide {
+    display: block;
   }
 
   .popup-pic-wrapper::before {
