@@ -3,4 +3,5 @@ $(function() {
     //= components/burger.js
     //= components/popup.js
     //= components/carousel.js
+    //= components/tab.js
 });
