@@ -35,8 +35,10 @@ const tabsSliderOptions = {
 
 if(tabsSliderContainer) {
   var tabsSliderCarousel = new Carousel(tabsSliderContainer, tabsSliderOptions);
+
+  $(window).resize(function(){
+    tabsSliderCarousel.reInit();
+  });
 }
 
-$(window).resize(function(){
-  tabsSliderCarousel.reInit();
-})
+

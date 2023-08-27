@@ -1,13 +1,29 @@
 <!-- popup -->
-<div class="popup" id="test" style="display: none;">
+<div class="popup" id="connect-popup" style="display: none;">
 	<div class="popup__inner">
-		<div class="popup__title">header</div>
+
 		<form class="form" action="#">
-			<input class="form__input" type="text" placeholder="Имя" required>
-			<input class="form__input input-phone" type="tel" placeholder="Телефон" required>
-			<input class="form__input" type="text" placeholder="Комментарий" required>
-			<input class="btn btn-o btn-small" type="submit" value="Записаться">
+			<p class="form__wrapper">
+				<label for="form-name">Имя</label>
+				<input class="form__input" id="form-name" type="text" placeholder="Имя" required>
+			</p>
+			<p class="form__wrapper">
+				<label for="form-mail">Email*</label>
+				<input class="form__input" id="form-mail" type="email" placeholder="you@email.com" required>
+			</p>
+			<p class="form__wrapper">
+				<label for="form-phone">Телефон</label>
+				<input class="form__input input-phone" id="form-phone" type="tel" placeholder="+375 (00) 000-00-00">
+			</p>
+			<p class="form__wrapper">
+				<label for="form-text">Сообщение</label>
+				<textarea class="form__input" id="form-text" type="" placeholder="Написать" required></textarea>
+			</p>
+			<p class="form__wrapper">
+				<input class="btn" type="submit" value="Отправить">
+			</p>
 		</form>
+
 	</div>
 </div>
 <!-- end popup -->
