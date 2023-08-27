@@ -14,7 +14,7 @@
 
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
-	<link rel="stylesheet" href="css/styles.css?v=7">
+	<link rel="stylesheet" href="css/styles.css?v=8">
 </head>
 <body class="home">
 
@@ -31,7 +31,7 @@
 	                <ul class="navigation__menu">
 	                    <li><a href="about.html">Кто мы?</a></li>
 	                    <li class="menu-item-has-children">
-	                        <a href="#">Сервисы</a>
+	                        <a href="javascript:;">Сервисы</a>
 	                        <ul class="sub-menu">
 	                            <li><a href="services.html">ИТ-решения для бизнеса</a></li>
 	                            <li><a href="#">Проверка контрагентов</a></li>
@@ -75,7 +75,7 @@
 											<h1 class="h1">Весь офис в одной цифровой экосистеме</h1>
 											<p class="h1-subtitle">Комплексный цифровой продукт, объединяющий различные бизнес-сервисы для нового или небольшого/среднего бизнеса заменяющий функциональных специалистов и работающий по подписке</p>
 
-											<a class="btn" href="#">Подключиться</a>
+											<a class="btn" href="javascript:;" data-fancybox data-src="#connect-popup">Подключиться</a>
 
 											<div class="app">
 												<p class="h1-subtitle">Скачивай приложение и работай с телефона!</p>
@@ -615,8 +615,8 @@
 	            <a class="user__email" href="mailto:info@metaera.by">info@metaera.by</a>
 	
 	            <ul class="user__menu">
-	                <li><a class="btn" href="#">Войти</a></li>
-	                <li><a class="btn btn-o" href="#">Регистрация</a></li>
+	                <li><a class="btn" href="https://login.meta-era.by/Authentication.aspx">Войти</a></li>
+	                <li><a class="btn btn-o" href="https://login.meta-era.by/register.aspx">Регистрация</a></li>
 	            </ul>
 	
 	        </div>
@@ -625,15 +625,31 @@
 	<!-- end footer -->
 
 	<!-- popup -->
-	<div class="popup" id="test" style="display: none;">
+	<div class="popup" id="connect-popup" style="display: none;">
 		<div class="popup__inner">
-			<div class="popup__title">header</div>
+	
 			<form class="form" action="#">
-				<input class="form__input" type="text" placeholder="Имя" required>
-				<input class="form__input input-phone" type="tel" placeholder="Телефон" required>
-				<input class="form__input" type="text" placeholder="Комментарий" required>
-				<input class="btn btn-o btn-small" type="submit" value="Записаться">
+				<p class="form__wrapper">
+					<label for="form-name">Имя</label>
+					<input class="form__input" id="form-name" type="text" placeholder="Имя" required>
+				</p>
+				<p class="form__wrapper">
+					<label for="form-mail">Email*</label>
+					<input class="form__input" id="form-mail" type="email" placeholder="you@email.com" required>
+				</p>
+				<p class="form__wrapper">
+					<label for="form-phone">Телефон</label>
+					<input class="form__input input-phone" id="form-phone" type="tel" placeholder="+375 (00) 000-00-00">
+				</p>
+				<p class="form__wrapper">
+					<label for="form-text">Сообщение</label>
+					<textarea class="form__input" id="form-text" type="" placeholder="Написать" required></textarea>
+				</p>
+				<p class="form__wrapper">
+					<input class="btn" type="submit" value="Отправить">
+				</p>
 			</form>
+	
 		</div>
 	</div>
 	<!-- end popup -->

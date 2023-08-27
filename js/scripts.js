@@ -58,6 +58,35 @@ $(function() {
     // 	menu.removeClass('open');
     // 	burger.removeClass('header__burger--close');
     // });
+    $('.menu-item-has-children > a').on('click', function(e) {
+    	e.preventDefault();
+    });
+    
+    var submenu =  $('.sub-menu');
+    var menuChildren = $('.menu-item-has-children');
+    
+    
+    menuChildren.on('click', function() {
+    	
+    	if ($(this).hasClass('active')){
+    			$(this).removeClass('active');
+    			$(this).find('.sub-menu').removeClass('open').slideUp();
+    	} else {
+    			$(this).addClass('active');
+    			$(this).find('.sub-menu').addClass('open').slideDown();
+    	}
+    	// $(this).find('.sub-menu').toggleClass('open').slideToggle();
+    });
+    
+    // $(document).on('click', function (e) {
+    
+        
+    // 	if (   !$('.menu-item-has-children a').is(e.target) ){
+    // 					menuChildren.removeClass('active');
+    // 					submenu.removeClass('open').slideUp();
+    // 	}
+    
+    // });
     Fancybox.bind("[data-fancybox]", {
       // Your custom options
     });
@@ -98,11 +127,11 @@ $(function() {
     
     if(tabsSliderContainer) {
       var tabsSliderCarousel = new Carousel(tabsSliderContainer, tabsSliderOptions);
-    }
     
-    $(window).resize(function(){
-      tabsSliderCarousel.reInit();
-    })
+      $(window).resize(function(){
+        tabsSliderCarousel.reInit();
+      });
+    }
     const tabCards = $('.tab__cards .tab__card');
     
     tabCards.on('click', function(){

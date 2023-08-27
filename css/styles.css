@@ -386,6 +386,7 @@ input[type='submit'] {
 
 .btn {
   padding: 10px 45px;
+  border: none;
   border-radius: 12px;
   font-size: 15px;
   font-weight: 500;
@@ -570,13 +571,36 @@ input[type='submit'] {
   background-color: #f4f4f4;
 }
 
-.navigation__menu li:hover ul.sub-menu {
-  display: block;
-}
-
 .navigation__menu ul.sub-menu li:hover a:after {
   content: "→";
   margin-left: 30px;
+}
+
+.navigation__menu li.menu-item-has-children > a {
+  position: relative;
+  padding-right: 35px;
+}
+
+.navigation__menu li.menu-item-has-children > a:after {
+  content: '';
+  display: inline-block;
+  background: url(../img/arrow_down.svg) no-repeat center;
+  width: 17px;
+  height: 7px;
+  background-size: contain;
+  position: absolute;
+  top: calc(50% - 4px);
+  right: 10px;
+  transition: 0.1s ease-in-out;
+  -webkit-user-select: none;
+      -ms-user-select: none;
+          user-select: none;
+  outline: none;
+}
+
+.navigation__menu li.menu-item-has-children.active > a:after {
+  -webkit-transform: rotate(180deg);
+          transform: rotate(180deg);
 }
 
 .navigation__menu {
@@ -763,6 +787,48 @@ input[type='submit'] {
 
 .f-carousel__slide.active {
   display: block;
+}
+
+.form {
+  font-size: 15px;
+  font-weight: 500;
+}
+
+.form .form__wrapper {
+  margin-bottom: 15px;
+}
+
+.form label {
+  margin-bottom: 5px;
+  display: block;
+  color: #807974;
+}
+
+.form__input {
+  width: 300px;
+  max-width: 100%;
+  padding: 10px 18px;
+  border: 1px solid #BFB9B5;
+  border-radius: 7px;
+  outline: none;
+  color: #BFB9B5;
+  background: linear-gradient(0deg, #F6F4F3 0%, #F6F4F3 100%), rgba(255, 255, 255, 0.2);
+}
+
+.form__input:focus {
+  border: 1px solid #FDEEE3;
+  background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(255, 255, 255, 0.2);
+  box-shadow: 0px 0px 3px 0px #FAD3B7;
+  color: #BFB9B5;
+}
+
+.form textarea {
+  min-height: 70px;
+}
+
+.popup {
+  background: linear-gradient(90deg, #FFFFFF 0%, #FDEEE3 100%);
+  border-radius: 24px;
 }
 
 .popup-pic-wrapper {
@@ -1000,6 +1066,22 @@ input[type='submit'] {
     display: none;
   }
 
+  .navigation__menu {
+    margin-bottom: 50px;
+  }
+
+  .navigation__menu ul.sub-menu {
+    -webkit-column-count: unset;
+            column-count: unset;
+    border-radius: 0;
+    box-shadow: none;
+    position: static;
+    padding: 0;
+    padding-left: 20px;
+    max-height: 40vh;
+    overflow-y: auto;
+  }
+
   .navigation {
     -webkit-transform: translateY(-200%);
             transform: translateY(-200%);
@@ -1015,7 +1097,7 @@ input[type='submit'] {
     justify-content: center;
     align-items: flex-start;
     width: 100%;
-    height: 110vh;
+    height: 100vh;
     margin: 0;
     padding: 10px;
     background-color: #fff;
