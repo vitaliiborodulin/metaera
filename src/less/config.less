@@ -265,6 +265,10 @@
         margin-bottom: 0;
     }
 
+    .tac-sm {
+        text-align: center!important;
+    }
+
 }
 
 // ::placeholder {
@@ -422,6 +426,46 @@ select {
 textarea {
 	resize: none;
 }
+
+strong, b {
+    font-weight: 700;
+}
+
+.page-template-page-about .card strong {
+    font-size: 24px;
+    line-height: 1.167;
+    font-weight: 700;
+    color: #180B02;
+
+    .sm(font-size, 20px);
+}
+
+.contacts__box {
+    > * {
+        margin-bottom: 6px;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.5;
+        color: @me-color-dark-heather;
+    
+        .sm-block({
+            font-size: 15px;
+        });
+    }
+
+    a {
+        display: block;
+        text-decoration: none;
+        color: inherit;
+        transition: color 0.5s ease;
+
+        &:hover {
+            color: @me-color-fiery-orange;
+        }
+    }
+}
+
+
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 @media (prefers-reduced-motion: reduce) {

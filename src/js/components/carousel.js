@@ -14,7 +14,9 @@ const servOptions = {
 	// 'slidesPerPage': 3,
 };
 
-if(servContainer) new Carousel(servContainer, servOptions);
+if(servContainer){
+  const servCarousel = new Carousel(servContainer, servOptions)
+};
 
 // service page
 
@@ -34,7 +36,7 @@ const tabsSliderOptions = {
 };
 
 if(tabsSliderContainer) {
-  var tabsSliderCarousel = new Carousel(tabsSliderContainer, tabsSliderOptions);
+  const tabsSliderCarousel = new Carousel(tabsSliderContainer, tabsSliderOptions);
 
   $(window).resize(function(){
     tabsSliderCarousel.reInit();
