@@ -29,7 +29,7 @@ function html() {
 }
 
 function styles() {
-	return gulp.src('./src/less/styles.less')
+	return gulp.src(['./src/less/styles.less','./src/less/styles-alt.less'])
 		.pipe(gulpIf(isMap, sourcemaps.init()))
 		.pipe(less())
 		.pipe(gcmq())

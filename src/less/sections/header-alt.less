@@ -1,0 +1,136 @@
+.header {
+	position: relative;
+	width: 100%;
+
+	padding: 20px 0;
+	// background-color: rgba(255, 255, 255, 0.9);
+	// backdrop-filter: blur(25px);
+	border-bottom: 1px solid @white;
+	z-index: 3;
+	// text-align: center;
+
+	transition: top 1.8s;
+
+	.md-block({
+		padding: 5px 0;
+	});
+
+	&__content {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+
+	// burger
+
+	&__burger {
+		@toggler-part-height: 1px;
+		@toggler-part-bg-color: @white;
+		@transition-time: 0.5s;
+		background: @me-color-fiery-orange;
+		padding: 12px;
+		border-radius: 12px;
+
+		display: none;
+
+		.md-block( {
+				display : block;
+				display : flex;
+		});
+
+		// position: relative;
+		z-index : 13;
+		align-items: center;
+		justify-content: center;
+		width: 40px;
+		height: 42px;
+		user-select: none;
+		cursor : pointer;
+
+		&:focus {
+				outline: none;
+		}
+
+		&>span {
+			display: inline-block;
+			width: 100%;
+			height: @toggler-part-height;
+			background: @toggler-part-bg-color;
+			position: relative;
+			transition: background @transition-time @transition-time;
+
+			&:before,
+			&:after {
+					content: '';
+					position: absolute;
+					left: 0;
+					height: @toggler-part-height;
+					background: @toggler-part-bg-color;
+					transform-origin: 50% 50%;
+					transition: top @transition-time @transition-time, transform @transition-time;
+			}
+
+			&:before {
+					width: 100%;
+					top: -6px;
+			}
+
+			&:after {
+					width: 100%;
+					top: 6px;
+			}
+		}
+
+		&--close {
+			position: relative;
+			z-index: 15;
+
+				>span {
+					transition: background @transition-time;
+					background: transparent;
+
+					&:before,
+					&:after {
+							width: 100%;
+							transition: top @transition-time, transform @transition-time @transition-time;
+							top: 0;
+							background-color: #fff;
+					}
+
+					&:before {
+							transform: rotate3d(0, 0, 1, 45deg);
+					}
+
+					&:after {
+							transform: rotate3d(0, 0, 1, -45deg);
+					}
+				}
+		}
+  }
+
+
+}
+
+.custom-logo-link {
+	display: block;
+	text-decoration: none;
+	// max-width: 113px;
+}
+
+// sticky menu
+
+.sticky-nav {
+	position: fixed;
+	top: -120px;
+	left: 0;
+	right: 0;
+	margin: 0 auto;
+	width: 100%;
+	z-index: 99;
+	box-shadow: 0 1px 2px rgba(0,0,0,.2);
+}
+
+.sticky-nav.fix {
+	top: 0;
+}
