@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width">
+	<meta name="theme-color" content="#F07D29">
+	<meta name="description" content="" >
+	<title>Контакты</title>
+	<link rel="icon" href="img/favicon.ico" type="image/x-icon">
+
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/fancybox/fancybox.css">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fancyapps/ui@5.0/dist/carousel/carousel.css">
+	<link rel="stylesheet" href="css/styles-alt.css?v=7">
+</head>
+<body>
+
+	<!-- header -->
+	<header class="header bg-dark">
+	    <div class="container">
+	        <div class="header__content">
+	
+	           <a href="index-alt.html" class="custom-logo-link">
+	            <img src="img/logo-2.svg" alt="" class="custom-logo">
+	           </a>
+	
+	           <nav class="navigation">
+	                <ul class="navigation__menu">
+	                    <li><a href="about-alt.html">Кто мы?</a></li>
+	                    <li class="menu-item-has-children">
+	                        <a href="javascript:;">Сервисы</a>
+	                        <ul class="sub-menu">
+	                            <li><a href="services-alt.html">ИТ-решения для бизнеса</a></li>
+	                            <li><a href="#">Проверка контрагентов</a></li>
+	                            <li><a href="#">Электронный третейский суд</a></li>
+	                            <li><a href="#">Медиация онлайн</a></li>
+	                            <li><a href="#">Консультации экспертов</a></li>
+	                            <li><a href="#">Онлайн бухгалтерия</a></li>
+	                            <li><a href="#">Интеграция с учетной системой</a></li>
+	                            <li><a href="#">Архив документов</a></li>
+	                            <li><a href="#">Документооборот</a></li>
+	                            <li><a href="#">эТТН</a></li>
+	                            <li><a href="#">Модуль «Экспресс»</a></li>
+	                        </ul>
+	                    </li>
+	                    <li><a href="content.html">Справка</a></li>
+	                    <li><a href="contacts-alt.html">Контакты</a></li>
+	                </ul>
+	
+	                <ul class="user__menu">
+	                    <li><a class="btn" href="https://login.meta-era.by/Authentication.aspx">Войти</a></li>
+	                    <li><a class="btn btn-o" href="https://login.meta-era.by/register.aspx">Регистрация</a></li>
+	                </ul>
+	            </nav>
+	
+	            <div class="header__burger"><span></span></div>
+	
+	        </div>
+	    </div>
+	</header>
+	<!-- end header -->
+
+	<main class="bg-dark">
+
+		<section class="hero">
+			<div class="container">
+	
+					<div class="hero__content">
+							
+							<div class="row align-center">
+									<div class="col-7">
+											<h1 class="h1">Контакты</h1>
+
+											<div class="contacts__block">
+												<div class="row align-center">
+													<div class="col-6">
+														<div class="contacts__box">
+															<a href="tel:+375 (44) 533-09-11">+375 (44) 533-09-11</a>
+															<a href="mailto:sales@metaera.by">sales@metaera.by</a>
+															<a href="https://metaera.by">metaera.by</a>
+														</div>
+													</div>
+													<div class="col-6">
+														<img src="img/qr-pic.jpg" alt="">
+													</div>
+												</div>
+											</div>
+											
+											<div class="app">
+												<p class="h1-subtitle">Скачивай приложение и работай с телефона!</p>
+												<div class="app-btns">
+													<a href="#" class="app-btns__gp">
+														<img src="img/android.png" alt="">
+													</a>
+													<a href="#" class="app-btns__as">
+														<img src="img/appstore-1.png" alt="">
+													</a>
+												</div>
+											</div>
+
+									</div>
+									<div class="col-5">
+										<div class="hero-img-wrap">
+											<img class="hero-img" src="img/contact-41-1.svg" alt="">
+										</div>
+									</div>
+							</div>
+
+					</div>
+	
+			</div>
+		</section>
+
+	</main>
+
+	<!-- footer -->
+	<footer class="footer bg-dark">
+	    <div class="container">
+	        <div class="footer__content">
+	
+	            <a href="index-alt.html" class="custom-logo-link">
+	                <img src="img/logo-2.svg" alt="" class="custom-logo">
+	            </a>
+	
+	            <div class="user__info">
+	                OOO "МетаЭра"	<br>
+		            УНП: 193593635
+	            </div>
+	
+	            <a class="user__tel" href="tel:+375 (44) 533-09-11"> +375 (44) 533-09-11</a>
+	
+	            <a class="user__email" href="mailto:info@metaera.by">info@metaera.by</a>
+	
+	            <ul class="user__menu">
+	                <li><a class="btn" href="https://login.meta-era.by/Authentication.aspx">Войти</a></li>
+	                <li><a class="btn btn-o" href="https://login.meta-era.by/register.aspx">Регистрация</a></li>
+	            </ul>
+	
+	        </div>
+	    </div>
+	</footer>
+	<!-- end footer -->
+
+	<!-- popup -->
+	<div class="popup" id="connect-popup" style="display: none;">
+		<div class="popup__inner">
+	
+			<div class="form">
+				<form>
+					<p class="form__wrapper">
+						<label for="form-name">Имя</label>
+						<input class="form__input" id="form-name" type="text" placeholder="Имя" required>
+					</p>
+					<p class="form__wrapper">
+						<label for="form-mail">Email*</label>
+						<input class="form__input" id="form-mail" type="email" placeholder="you@email.com" required>
+					</p>
+					<p class="form__wrapper">
+						<label for="form-phone">Телефон</label>
+						<input class="form__input input-phone" id="form-phone" type="tel" placeholder="+375 (00) 000-00-00">
+					</p>
+					<p class="form__wrapper">
+						<label for="form-text">Сообщение</label>
+						<textarea class="form__input" id="form-text" type="" placeholder="Написать" required></textarea>
+					</p>
+					<p class="form__wrapper">
+						<input class="btn" type="submit" value="Отправить">
+					</p>
+				</form>
+				<div class="form__thank" style="display: none;">
+					<img src="img/thank.svg" alt="">
+					<h1 class="h1 tac">Спасибо!</h1>
+				</div>
+			</div>
+	
+		</div>
+	</div>
+	<!-- end popup -->
+
+	<!-- scripts -->
+	<script src='js/jquery.min.js'></script>
+	<script src="js/jquery.maskedinput.min.js"></script>
+	<script src="js/fancybox.umd.js"></script>
+	<script src="js/carousel.umd.js"></script>
+	<script src="js/scripts.js"></script>
+	<!-- end scripts -->
+	
+
+</body>
+</html>

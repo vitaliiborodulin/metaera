@@ -78,15 +78,15 @@ $(function() {
     	// $(this).find('.sub-menu').toggleClass('open').slideToggle();
     });
     
-    // $(document).on('click', function (e) {
+    $(document).on('click', function (e) {
     
         
-    // 	if (   !$('.menu-item-has-children a').is(e.target) ){
-    // 					menuChildren.removeClass('active');
-    // 					submenu.removeClass('open').slideUp();
-    // 	}
+    	if (   !$('.menu-item-has-children a').is(e.target) ){
+    					menuChildren.removeClass('active');
+    					submenu.removeClass('open').slideUp();
+    	}
     
-    // });
+    });
     Fancybox.bind("[data-fancybox]", {
       // Your custom options
     });
