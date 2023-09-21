@@ -188,6 +188,10 @@ img {
   margin-top: 30px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -706,8 +710,8 @@ input[type='submit'] {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card__inner {
@@ -744,6 +748,10 @@ input[type='submit'] {
   z-index: 2;
 }
 
+.card__btn svg {
+  margin-top: 5px;
+}
+
 .home .card__inner {
   background-position-x: 80%;
 }
@@ -771,13 +779,26 @@ input[type='submit'] {
   background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.49%, #FFFFFF 15.99%, #FFFFFF 100%);
 }
 
+.carousel__cards {
+  --f-carousel-spacing: 20px;
+  background: linear-gradient(90deg, rgba(255, 255, 255, 0) 0.49%, #FFFFFF 15.99%, #FFFFFF 100%);
+}
+
+.card__slide {
+  max-width: 360px;
+}
+
 .serv__slide {
   max-width: 360px;
 }
 
-.serv__slide .card:hover {
-  -webkit-transform: none;
-          transform: none;
+.f-carousel__viewport {
+  padding: 20px 0;
+  overflow: unset;
+}
+
+.f-carousel__slide {
+  overflow: unset;
 }
 
 .f-carousel__dot {
@@ -1119,6 +1140,23 @@ input[type='submit'] {
   margin: 10px 5px;
 }
 
+@media screen and (min-width: 768px) {
+  .carousel__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .card__slide {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(33.33333333% - 30px);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .h1 {
     font-size: 45px;
@@ -1340,7 +1378,6 @@ input[type='submit'] {
 
   .card {
     max-width: 335px;
-    margin: 0 auto;
   }
 
   .card__inner {
@@ -1420,6 +1457,20 @@ input[type='submit'] {
 
   .contacts__block {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 768px) and (min-width: 450px) {
+  .carousel__cards {
+    --f-carousel-spacing: 10px;
   }
 }
 

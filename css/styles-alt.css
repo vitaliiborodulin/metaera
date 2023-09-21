@@ -215,6 +215,10 @@ img {
   margin-top: 30px;
 }
 
+.mb-30 {
+  margin-bottom: 30px;
+}
+
 .mt-auto {
   margin-top: auto;
 }
@@ -780,8 +784,8 @@ input[type='submit'] {
 }
 
 .card:hover {
-  -webkit-transform: scale(1.03);
-          transform: scale(1.03);
+  -webkit-transform: scale(1.02);
+          transform: scale(1.02);
 }
 
 .card__inner {
@@ -858,9 +862,13 @@ input[type='submit'] {
   max-width: 360px;
 }
 
-.serv__slide .card:hover {
-  -webkit-transform: none;
-          transform: none;
+.f-carousel__viewport {
+  padding: 20px 0;
+  overflow: unset;
+}
+
+.f-carousel__slide {
+  overflow: unset;
 }
 
 .f-carousel__dot {

@@ -70,20 +70,19 @@ $(function() {
     	
     	if ($(this).hasClass('active')){
     			$(this).removeClass('active');
-    			$(this).find('.sub-menu').removeClass('open').slideUp();
+    			$(this).find('.sub-menu').removeClass('open').hide();
     	} else {
     			$(this).addClass('active');
-    			$(this).find('.sub-menu').addClass('open').slideDown();
+    			$(this).find('.sub-menu').addClass('open').show();
     	}
     	// $(this).find('.sub-menu').toggleClass('open').slideToggle();
     });
     
     $(document).on('click', function (e) {
-    
-        
-    	if (   !$('.menu-item-has-children a').is(e.target) ){
-    					menuChildren.removeClass('active');
-    					submenu.removeClass('open').slideUp();
+     
+    	if (!$('.menu-item-has-children a').is(e.target) ){
+    			menuChildren.removeClass('active');
+    			submenu.removeClass('open').hide();
     	}
     
     });
@@ -108,6 +107,30 @@ $(function() {
     
     if(servContainer){
       const servCarousel = new Carousel(servContainer, servOptions)
+    };
+    
+    const cardsContainer = document.querySelector(".carousel__cards");
+    const cardsOptions = { 
+    	enabled: true,
+      breakpoints: {
+        "(min-width: 768px)": {
+          enabled: false,
+        },
+        "(max-width: 450px)": {
+          enabled: false,
+        },
+      },
+    	// Dots: {
+      //   minCount: 2,
+      // },
+    	Navigation: false,
+      Dots: false,
+    	// 'dragFree': true,
+    	// 'slidesPerPage': 3,
+    };
+    
+    if(cardsContainer){
+      const cardsCarousel = new Carousel(cardsContainer, cardsOptions)
     };
     
     // service page
@@ -149,6 +172,9 @@ $(function() {
     	$('.tabs__right-slider .f-carousel__slide[data-id='+id+']').slideDown(200);
     
     });
+
+    // $(".input-phone").mask("+375 (99) 999-99-99");
+
     $.urlParam = function(name) {
     	var results = new RegExp('[\?&]' + name + '=([^&#]*)').exec(window.location.href);
     	if (results == null) {
@@ -204,9 +230,7 @@ $(function() {
     if (utm_source) {
     	form_utm_source.val(utm_source);
     }
-
-    $("input[type=tel]").mask("+375 (99) 999-99-99");
-
+ 
 });
 
 document.addEventListener( 'wpcf7mailsent', function( event ) {
