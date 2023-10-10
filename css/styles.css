@@ -1282,6 +1282,23 @@ input[type='submit'] {
 .footer__bottom {
   padding-top: 10px;
   border-top: 1px solid #DEDEDE;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.footer__socials {
+  margin: 20px 0;
+}
+
+.footer__socials a {
+  text-decoration: none;
+  font-size: 0;
+}
+
+.footer__socials a + a {
+  margin-left: 5px;
 }
 
 @media screen and (min-width: 800px) {
