@@ -359,6 +359,10 @@ img {
   overflow: hidden;
 }
 
+.h3-2 {
+  min-height: 56px;
+}
+
 html,
 body {
   overflow-x: hidden;
@@ -483,6 +487,10 @@ b {
   color: #F07D29;
 }
 
+.contacts__box a.btn {
+  color: #fff;
+}
+
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */
 
 *:focus:not(:focus-visible) {
@@ -574,11 +582,11 @@ input[type='submit'] {
 }
 
 .user__tel {
-  padding-left: 15px;
+  padding-left: 25px;
 }
 
 .user__email {
-  padding-left: 25px;
+  padding-left: 30px;
 }
 
 .user__tel::before {
@@ -586,8 +594,8 @@ input[type='submit'] {
   position: absolute;
   left: 0;
   top: 2px;
-  width: 13px;
-  height: 17px;
+  width: 20px;
+  height: 20px;
   background: url(../img/tel.svg) no-repeat;
 }
 
@@ -596,8 +604,8 @@ input[type='submit'] {
   position: absolute;
   left: 0;
   top: 5px;
-  width: 17px;
-  height: 13px;
+  width: 20px;
+  height: 16px;
   background: url(../img/mail.svg) no-repeat;
 }
 
@@ -607,6 +615,8 @@ input[type='submit'] {
   flex-wrap: wrap;
   justify-content: space-evenly;
   align-items: flex-start;
+  position: relative;
+  z-index: 2;
   padding-top: 20px;
   text-align: center;
   border-top-left-radius: 24px;
@@ -792,18 +802,13 @@ input[type='submit'] {
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: center;
-  background-position-x: 100%;
-}
-
-.card__descr {
-  font-size: 15px;
-  font-weight: 400;
-  line-height: 1.6;
+  background-position-x: 95%;
 }
 
 .card__image {
   text-align: center;
   width: 100%;
+  height: 215px;
 }
 
 .card__image img {
@@ -840,34 +845,30 @@ input[type='submit'] {
   margin-top: 30px;
 }
 
-.container-fluid .card-list {
-  padding-bottom: 50px;
-  overflow-x: auto;
-}
-
-.container-fluid .row {
-  flex-wrap: nowrap;
-}
-
-.container-fluid .col-4 {
-  flex-basis: 360px;
-  flex-shrink: 0;
-}
-
 .carousel__serv {
   --f-carousel-spacing: 40px;
+}
+
+.carousel__cards {
+  --f-carousel-spacing: 20px;
+}
+
+.card__slide {
+  max-width: 360px;
 }
 
 .serv__slide {
   max-width: 360px;
 }
 
-.f-carousel__viewport {
+.carousel__cards .f-carousel__viewport,
+.carousel__serv .f-carousel__viewport {
   padding: 20px 0;
   overflow: unset;
 }
 
-.f-carousel__slide {
+.carousel__cards .f-carousel__slide,
+.carousel__serv .f-carousel__slide {
   overflow: unset;
 }
 
@@ -926,6 +927,8 @@ input[type='submit'] {
 
 .form .form__wrapper {
   margin-bottom: 15px;
+  width: 300px;
+  max-width: 100%;
 }
 
 .form label {
@@ -935,8 +938,7 @@ input[type='submit'] {
 }
 
 .form__input {
-  width: 300px;
-  max-width: 100%;
+  width: 100%;
   padding: 10px 18px;
   border: 1px solid #BFB9B5;
   border-radius: 7px;
@@ -954,6 +956,21 @@ input[type='submit'] {
 
 .form textarea {
   min-height: 70px;
+}
+
+.form p:first-of-type {
+  margin-bottom: 10px;
+  line-height: 1;
+  font-size: 14px;
+  line-height: 1.4;
+}
+
+.form__acceptance .wpcf7-list-item {
+  margin-left: 0;
+}
+
+.form__acceptance a {
+  color: inherit;
 }
 
 .wpcf7 form .wpcf7-response-output {
@@ -999,6 +1016,14 @@ input[type='submit'] {
 
 .popup-link {
   display: block;
+}
+
+.fancybox__content > .f-button.is-close-btn {
+  opacity: 1;
+  top: 5px;
+  right: 5px;
+  color: #4E473F;
+  background: transparent;
 }
 
 .content p + p,
@@ -1209,6 +1234,23 @@ input[type='submit'] {
   max-width: 150px;
 }
 
+@media screen and (min-width: 800px) {
+  .carousel__cards {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -15px;
+    margin-right: -15px;
+  }
+
+  .card__slide {
+    box-sizing: border-box;
+    word-wrap: break-word;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: calc(33.33333333% - 30px);
+  }
+}
+
 @media screen and (max-width: 900px) {
   .h1 {
     font-size: 45px;
@@ -1390,6 +1432,10 @@ input[type='submit'] {
     text-align: center!important;
   }
 
+  .h3-2 {
+    min-height: auto;
+  }
+
   section {
     padding: 46px 0;
   }
@@ -1445,15 +1491,10 @@ input[type='submit'] {
     border-radius: 0;
   }
 
-  .card {
-    max-width: 335px;
-    margin: 0 auto;
-  }
-
   .card__inner {
     background-position-x: 45%;
     background-position-y: bottom;
-    background-size: 50%;
+    background-size: 200px;
   }
 
   .home .card__inner {
@@ -1469,14 +1510,8 @@ input[type='submit'] {
     margin-top: 20px;
   }
 
-  .container-fluid .card-list {
-    padding-bottom: 0;
-    overflow-x: unset;
-  }
-
-  .container-fluid .row {
-    flex-wrap: wrap;
-    justify-content: center;
+  .cards .card {
+    margin: 0 auto;
   }
 
   .serv__slide {
@@ -1523,6 +1558,28 @@ input[type='submit'] {
 
   .contacts__block {
     margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .container {
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .card__slide .card {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 800px) and (min-width: 450px) {
+  .carousel__cards {
+    --f-carousel-spacing: 10px;
+    background: transparent;
   }
 }
 
