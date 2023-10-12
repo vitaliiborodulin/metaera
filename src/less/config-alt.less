@@ -120,6 +120,10 @@
     margin-top: 30px;
 }
 
+.mb-30 {
+    margin-bottom: 30px;
+}
+
 .mt-auto {
     margin-top: auto;
 }
@@ -292,6 +296,10 @@
     overflow: hidden;
 }
 
+.h3-2 {
+	min-height: 56px;
+}
+
 @media screen and (max-width: 768px) {
     .d-sm-none {
         display: none;
@@ -351,6 +359,12 @@
         text-align: center!important;
     }
 
+}
+
+@media screen and (max-width: 768px) {
+    .h3-2 {
+        min-height: auto;
+    }
 }
 
 // ::placeholder {
@@ -556,8 +570,24 @@ strong, b {
             color: @me-color-fiery-orange;
         }
     }
+
+    a.btn {
+        color: @white;
+    }
 }
 
+.gt_switcher-popup {
+    margin: 0 10px;
+    *{
+        color: @white !important;;
+    }
+}
+
+@media screen and (max-width: 1170px){
+    .gt_switcher-popup span {
+        display: none;
+    }
+}
 
 
 /* Удаляем все анимации и переходы для людей, которые предпочитают их не использовать */

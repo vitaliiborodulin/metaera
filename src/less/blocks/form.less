@@ -4,6 +4,8 @@
 
 	.form__wrapper {
 		margin-bottom: 15px;
+		width: 300px;
+    max-width: 100%;
 	}
 
 	label {
@@ -13,8 +15,7 @@
 	}
 
 	&__input {
-		width: 300px;
-		max-width: 100%;
+		width: 100%;
 		padding: 10px 18px;
 		border: 1px solid #BFB9B5;
 		border-radius: 7px;
@@ -35,6 +36,22 @@
 
 	textarea {
 		min-height: 70px;
+	}
+
+	p:first-of-type {
+		margin-bottom: 10px;
+		line-height: 1;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	&__acceptance {
+		.wpcf7-list-item {
+			margin-left: 0;
+		}
+		a {
+			color: inherit;
+		}
 	}
 
 }

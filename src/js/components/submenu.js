@@ -10,20 +10,19 @@ menuChildren.on('click', function() {
 	
 	if ($(this).hasClass('active')){
 			$(this).removeClass('active');
-			$(this).find('.sub-menu').removeClass('open').slideUp();
+			$(this).find('.sub-menu').removeClass('open').hide();
 	} else {
 			$(this).addClass('active');
-			$(this).find('.sub-menu').addClass('open').slideDown();
+			$(this).find('.sub-menu').addClass('open').show();
 	}
 	// $(this).find('.sub-menu').toggleClass('open').slideToggle();
 });
 
 $(document).on('click', function (e) {
-
-    
-	if (   !$('.menu-item-has-children a').is(e.target) ){
-					menuChildren.removeClass('active');
-					submenu.removeClass('open').slideUp();
+ 
+	if (!$('.menu-item-has-children a').is(e.target) ){
+			menuChildren.removeClass('active');
+			submenu.removeClass('open').hide();
 	}
 
 });

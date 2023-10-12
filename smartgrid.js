@@ -15,6 +15,7 @@ module.exports = {
 		},
 		xs: {
 			width: "576px",
+			fields: "15px"
 		},
 		// xxs: {
 		// 	width: "320px",

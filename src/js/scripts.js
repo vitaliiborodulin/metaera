@@ -5,10 +5,12 @@ $(function() {
     //= components/popup.js
     //= components/carousel.js
     //= components/tab.js
+
+    $(".input-phone").mask("+375 (99) 999-99-99");
+
+    //= components/footer.js
     //= components/utm.js
-
-    $("input[type=tel]").mask("+375 (99) 999-99-99");
-
+ 
 });
 
 document.addEventListener( 'wpcf7mailsent', function( event ) {
