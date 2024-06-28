@@ -1,0 +1,66 @@
+.form {
+	font-size: 15px;
+	font-weight: 500;
+
+	.form__wrapper {
+		margin-bottom: 15px;
+		width: 300px;
+    max-width: 100%;
+	}
+
+	label {
+		margin-bottom: 5px;
+		display: block;
+		color: @me-color-dark-heather;
+	}
+
+	&__input {
+		width: 100%;
+		padding: 10px 18px;
+		border: 1px solid #BFB9B5;
+		border-radius: 7px;
+		outline: none;
+		color: #BFB9B5;
+
+		background: linear-gradient(0deg, #F6F4F3 0%, #F6F4F3 100%), rgba(255, 255, 255, 0.20);
+
+
+		&:focus {
+			border: 1px solid @me-color-tender-peach;
+			background: linear-gradient(0deg, #FFF 0%, #FFF 100%), rgba(255, 255, 255, 0.20);
+			box-shadow: 0px 0px 3px 0px #FAD3B7;
+
+			color: #BFB9B5;
+		}
+	}
+
+	textarea {
+		min-height: 70px;
+	}
+
+	p:first-of-type {
+		margin-bottom: 10px;
+		line-height: 1;
+		font-size: 14px;
+		line-height: 1.4;
+	}
+
+	&__acceptance {
+		.wpcf7-list-item {
+			margin-left: 0;
+		}
+		a {
+			color: inherit;
+		}
+	}
+
+}
+
+.wpcf7 form .wpcf7-response-output {
+  text-align: center;
+  font-size: 10px;
+  margin: 0 auto;
+  padding: 5px;
+  width: 100%;
+  max-width: 300px;
+}

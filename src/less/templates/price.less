@@ -1,0 +1,202 @@
+.price-subscr, .price-dop, .price-avail, .price-questions {
+	margin-bottom: 124px;
+	.sm(margin-bottom, 92px);
+}
+
+.page-template-page-price {
+	// .hero {
+	// 	margin-bottom: 52px;
+	// }
+	.hero .btn {
+		margin-top: 32px;
+	}
+	.h1-subtitle {
+		font-size: 15px;
+		color: @me-color-dark-taupe;
+	}
+	.card .h3 {
+		margin-bottom: 20px;
+	}
+	.card + .card {
+    margin-top: 0;
+	}
+	.card__descr li {
+		font-size: 18px;
+		.sm(font-size, 16px);
+	}
+}
+
+.price__list {
+	.row-flex();
+	justify-content: center;
+}
+
+.price__item {
+	.col();
+	.size(4);
+	.size-md(7);
+	.size-sm(12);
+
+	position: relative;
+
+	display: flex;
+	flex-direction: column;
+	align-items: flex-start;
+
+	border: 1px solid fade(@me-color-walnut-brown, 4%);
+
+	transition: transform .4s cubic-bezier(0,0,.4,1);
+	will-change: transform;
+
+	&:hover {
+		transform: scale(1.02);
+	}
+
+	&--pop {
+		border: 1px solid fade(@me-color-fiery-orange, 18%);
+		// border: 16px solid transparent;
+		// border-image: linear-gradient(45deg, red , yellow);
+		// border-image-slice: 1;
+	}
+
+	&--pop::after {
+		position: absolute;
+		content: 'Самый популярный';
+		left: 50%;
+		transform: translate(-50%, -50%);
+		top: 0;
+
+		padding: 8px 12px;
+		font-size: 12px;
+		border-radius: 12px;
+
+		color: @white;
+		background-color: @me-color-fiery-orange;
+	}
+}
+
+.price__item + .price__item {
+	.md(margin-top, 40px);
+}
+
+.price__top {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	width: 100%;
+	// flex-wrap: wrap;
+}
+
+.price__period {
+	margin-bottom: 40px;
+}
+
+.price__limit {
+	margin-bottom: 4px;
+	font-weight: 700;
+	font-size: 24px;
+	color: @me-color-walnut-brown;
+}
+
+.price__pm {
+	font-weight: 500;
+	font-size: 15px;
+}
+
+.price__disc {
+	width: 70px;
+	height: 70px;
+	text-align: center;
+	line-height: 70px;
+
+	font-weight: 700;
+	font-size: 24px;
+
+	color: @me-color-fiery-orange;
+	background-color: @white;
+	border-radius: 50%;
+
+	.sm-block({
+		width: 64px;
+		height: 64px;
+		line-height: 64px;
+		font-size: 20px;
+	});
+}
+
+.price__total {
+	margin-top: auto;
+	text-align: left;
+}
+
+.price__old {
+	margin-bottom: 4px;
+	font-weight: 500;
+	font-size: 15px;
+	color: @me-color-dark-heather;
+	text-decoration: line-through;
+}
+
+.price__sum {
+	font-weight: 500;
+	font-size: 18px;
+	color: @me-color-walnut-brown;
+}
+
+.price-subscr {
+	.card__descr + h3 {
+		margin-top: 52px;
+		.sm(margin-top, 40px);
+	}
+	li {
+		padding-left: 0;
+		&::before {
+			display: none;
+		}
+		&::after{
+			position: absolute;
+			content: '';
+			background: url(../img/price-check.svg) no-repeat;
+			width: 16px;
+			height: 14px;
+			right: 0;
+			top: 0;
+		}
+
+		span {
+			font-weight: 700;
+			margin-left: 10px;
+			text-align: right;
+		}
+	}
+}
+
+.price-subscr .card__descr li:has(span){
+	display: flex;
+	justify-content: space-between;
+}
+
+.price-subscr .card__descr li:has(span)::after{
+	display: none;
+}
+
+.price-dop .card__text {
+	margin-bottom: 20px;
+}
+
+.price-avail {
+	.card__image {
+		display: flex;
+		align-items: center;
+		height: 100%;
+	}
+	.h3 {
+		margin-bottom: 20px;
+	}
+}
+
+.price-questions h2 {
+	.sm-block({
+		margin: 20px 0;
+	});
+}

@@ -1,0 +1,62 @@
+.tab {
+	&__cards {
+		max-height: 521px;
+		overflow-y: auto;
+	}
+
+	&__card {
+		padding: 20px;
+		border-radius: 14px;
+
+		.sm(background-color, @me-color-tender-peach);
+
+		&.active {
+			background-color: @me-color-tender-peach;
+		}
+	}
+
+	&__image {
+		margin-bottom: 22px;
+
+		width: 100%;
+		// height: 228px;
+
+		// img {
+		// 	width: 100%;
+		// 	height: 100%;
+		// 	object-fit: fill;
+		// }
+	}
+
+	&__header {
+		margin-bottom: 10px;
+
+		font-size: 17px;
+		font-weight: 700;
+		color: @me-color-walnut-brown;
+	}
+
+	&__descr {
+		font-size: 14px;
+		font-weight: 500;
+		color: @me-color-dark-heather;
+
+		p+p {
+			margin-top: 10px;
+		}
+	}
+
+	
+}
+
+.tabs__right {
+	.f-carousel__slide {
+		display: none;
+	
+		.sm(display, block);
+	
+		&.active {
+			display: block;
+		}
+	}
+}
