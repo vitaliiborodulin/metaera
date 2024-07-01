@@ -1,4 +1,4 @@
-<div class="cookie">
+<div class="cookie" style="display: none;">
     <div class="cookie__one">
         <div class="cookie__title">Обработка файлов cookie</div>
         <div class="cookie__text">Мы используем файлы cookie для улучшения вашего опыта просмотра, контента на сервере и анализа вашего трафика. Нажав “Принять все”, вы даете согласие на использование нами файлов cookie</div>
@@ -14,19 +14,34 @@
         <div class="cookie__text">Мы используем файлы cookie, чтобы помочь вам эффективно перемещаться и выполнять определенные функции. Ниже вы найдете подробную информацию обо всех файлах cookie в каждой категории согласия</div>
         <div class="cookie__settings-list">
             <div class="cookie__settings-item">
-                <div class="cookie__title">Необходимые</div>
-                <input type="checkbox" name="cookie-nessessary" id="cookie-nessessary" checked disabled>
+                <div class="cookie__header">
+                    <div class="cookie__title">Необходимые</div>
+                    <div class="cookie__switch">
+                        <input type="checkbox" name="cookie-nessessary" id="cookie-nessessary" checked disabled>
+                        <label for="cookie-nessessary"><span></span></label>
+                    </div>
+                </div>
                 <div class="cookie__text">Необходимые файлы cookie необходимы для включения основных функций этого сайта, таких как обеспечение безопасности входа в систему или изменение настроек вашего согласия. Эти файлы cookie не хранят никаких личных данных, позволяющих установить личность.</div>
             </div>
             <div class="cookie__settings-item">
-                <div class="cookie__title">Функциональные</div>
-                <input type="checkbox" name="cookie-func" id="cookie-func">
+                <div class="cookie__header">
+                    <div class="cookie__title">Функциональные</div>
+                    <div class="cookie__switch">
+                        <input type="checkbox" name="cookie-func" id="cookie-func">
+                        <label for="cookie-func"><span></span></label>
+                    </div>
+                </div>
                 <div class="cookie__text">Функциональные файлы сооке помогают выполнять определенные функции, такие как обмен содержимым веб-сайта
                     на платформах социальных сетей, сбор отзывов и другие сторонние функции.</div>
             </div>
             <div class="cookie__settings-item">
-                <div class="cookie__title">Аналитика</div>
-                <input type="checkbox" name="cookie-analytic" id="cookie-analytic" checked >
+                <div class="cookie__header">
+                    <div class="cookie__title">Аналитика</div>
+                    <div class="cookie__switch">
+                        <input type="checkbox" name="cookie-analytic" id="cookie-analytic" checked>
+                        <label for="cookie-analytic"><span></span></label>
+                    </div>
+                </div>
                 <div class="cookie__text">Аналитические файлы сооке используются для понимания того, как посетители взаимодействуют с веб-сайтом. Эти файлы сооке помогают предоставлять информацию о таких показателях, как количество посетителей, показатель отказов, источник трафика и т.д.</div>
             </div>
         </div>
