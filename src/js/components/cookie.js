@@ -82,8 +82,7 @@ if(showCookie != 'no'){
     });
 
     cookieRejectBtn.on('click', function(){
-        cookieDialog.hide();
-        createCookie('show_cookie', 'no', '365');
+        window.location.href = 'https://google.com';
     });
 
     cookieCloseBtn.on('click', function(){
