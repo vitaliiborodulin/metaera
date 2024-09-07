@@ -1,9 +1,9 @@
-$('.menu-item-has-children > a').on('click', function(e) {
+$('.navigation__menu .menu-item-has-children > a').on('click', function(e) {
 	e.preventDefault();
 });
 
-var submenu =  $('.sub-menu');
-var menuChildren = $('.menu-item-has-children');
+var submenu =  $('.navigation__menu .sub-menu');
+var menuChildren = $(' .navigation__menu .menu-item-has-children');
 
 
 menuChildren.on('click', function() {
@@ -20,7 +20,7 @@ menuChildren.on('click', function() {
 
 $(document).on('click', function (e) {
  
-	if (!$('.menu-item-has-children a').is(e.target) ){
+	if (!$('.navigation__menu .menu-item-has-children a').is(e.target) ){
 			menuChildren.removeClass('active');
 			submenu.removeClass('open').hide();
 	}

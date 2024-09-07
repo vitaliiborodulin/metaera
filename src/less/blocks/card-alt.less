@@ -84,6 +84,30 @@
 		}
 	}
 
+	&__descr {
+		li{
+			position: relative;
+			padding-left: 20px;
+
+			&::before{
+				content: '';
+				position: absolute;
+				left: 0;
+				top: 50%;
+				transform: translateY(-50%);
+				border-radius: 50%;
+				background-color: @me-color-fiery-orange;
+				width: 8px;
+				height: 8px;
+			}
+		}
+
+		li+li {
+			margin-top: 16px;
+			.sm(margin-top, 12px);
+		}
+	}
+
 }
 
 // .card__inner > .row .card__image {

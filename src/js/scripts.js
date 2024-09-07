@@ -7,6 +7,7 @@ $(function() {
     //= components/popup.js
     //= components/carousel.js
     //= components/tab.js
+    //= components/accordion.js
     
     $(".input-phone").mask("+375 (99) 999-99-99");
     

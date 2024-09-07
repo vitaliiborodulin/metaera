@@ -56,14 +56,24 @@ if (utm_source) {
 }
 
 // cookie popup
+
+const cookieResetBtn = $('.cookie__btn--reset');
+cookieResetBtn.on('click', function(){
+    if (confirm('Вы действительно хотите удалить куки сайта?')) {
+        createCookie('show_cookie', null);
+		window.location.reload();
+	}
+});
+
+
 let showCookie = getCookie('show_cookie');
 if(showCookie != 'no'){
 
     const cookieDialog = $('.cookie');
 
-    setTimeout(function(){
+    // setTimeout(function(){
         cookieDialog.show();
-    }, 2000); 
+    // }, 2000); 
 
     // cookie btns
     const cookieRejectBtn = $('.cookie__btn--reject');
@@ -96,8 +106,10 @@ if(showCookie != 'no'){
     });
 
     cookieSaveSettingsBtn.on('click', function(){
-        cookieTwoPage.hide();
-        cookieOnePage.show();
+        // cookieTwoPage.hide();
+        // cookieOnePage.show();
+        cookieDialog.hide();
+        createCookie('show_cookie', 'no', '365');
     });
 
 }
