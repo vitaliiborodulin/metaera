@@ -1,0 +1,49 @@
+.user {
+	&__menu {
+		display: flex;
+	
+		li {
+			margin-left: 10px;
+		}
+	}
+
+	&__tel, &__email {
+		display: block;
+		position: relative;
+		text-decoration: none;
+		color: inherit;
+		transition: color 0.5s ease;
+
+		&:hover {
+			color: @me-color-fiery-orange;
+		}
+	}
+
+	&__tel {
+		padding-left: 25px;
+	}
+
+	&__email {
+		padding-left: 30px;
+	}
+
+	&__tel::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 2px;
+		width: 20px;
+		height: 20px;
+		background: url(../img/tel.svg) no-repeat;
+	}
+
+	&__email::before {
+		content: '';
+		position: absolute;
+		left: 0;
+		top: 5px;
+		width: 20px;
+		height: 16px;
+		background: url(../img/mail.svg) no-repeat;
+	}
+}
